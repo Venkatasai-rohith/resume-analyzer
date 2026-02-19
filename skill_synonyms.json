@@ -1,0 +1,19 @@
+{
+  "javascript": ["js"],
+  "typescript": ["ts"],
+  "react": ["reactjs", "react.js"],
+  "node.js": ["node", "nodejs"],
+  "machine learning": ["ml"],
+  "deep learning": ["dl"],
+  "natural language processing": ["nlp"],
+  "object oriented programming": ["oop"],
+  "postgresql": ["postgres"],
+  "tensorflow": ["tf"],
+  "pytorch": ["torch"],
+  "amazon web services": ["aws"],
+  "google cloud platform": ["gcp"],
+  "continuous integration": ["ci"],
+  "continuous deployment": ["cd"],
+  "scikit-learn": ["scikit","sklearn"],
+  "computer vision": ["cv","opencv","OpenCV","openCV"]
+}

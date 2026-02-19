@@ -1,0 +1,265 @@
+{
+  "AIML": {
+    "skills": [
+      "python",
+      "R",
+      "Java",
+      "machine learning",
+      "deep learning",
+      "neural networks",
+      "computer vision",
+      "natural language processing",
+      "nlp",
+      "tensorflow",
+      "pytorch",
+      "keras",
+      "scikit-learn",
+      "opencv",
+      "transformers",
+      "huggingface",
+      "cnn",
+      "rnn",
+      "lstm",
+      "gan",
+      "reinforcement learning",
+      "feature engineering",
+      "model deployment",
+      "mlops"
+    ]
+  },
+
+  "Data Science": {
+    "skills": [
+      "python",
+      "r",
+      "pandas",
+      "numpy",
+      "matplotlib",
+      "seaborn",
+      "plotly",
+      "data analysis",
+      "data visualization",
+      "statistics",
+      "hypothesis testing",
+      "excel",
+      "tableau",
+      "power bi",
+      "jupyter",
+      "data cleaning",
+      "feature selection",
+      "sql"
+    ]
+  },
+
+  "Frontend Development": {
+  "skills": [
+    "html",
+    "css",
+    "javascript",
+    "typescript",
+    "react",
+    "reactjs",
+    "angular",
+    "vue",
+    "next.js",
+    "redux",
+    "zustand",
+    "tailwind",
+    "bootstrap",
+    "material ui",
+    "chakra ui",
+    "sass",
+    "css grid",
+    "flexbox",
+    "responsive design",
+    "webpack",
+    "vite",
+    "babel",
+    "ui development",
+    "web accessibility"
+  ]
+},
+
+"Backend Development": {
+  "skills": [
+    "node.js",
+    "express",
+    "nestjs",
+    "django",
+    "flask",
+    "fastapi",
+    "spring",
+    "spring boot",
+    "asp.net",
+    "rest api",
+    "graphql",
+    "jwt",
+    "authentication",
+    "authorization",
+    "microservices",
+    "api development",
+    "server-side development",
+    "database integration",
+    "orm",
+    "prisma",
+    "mongoose"
+  ]
+},
+
+  "Mobile Development": {
+    "skills": [
+      "android",
+      "kotlin",
+      "java",
+      "flutter",
+      "dart",
+      "react native",
+      "swift",
+      "swiftui",
+      "xcode",
+      "android studio",
+      "jetpack compose",
+      "firebase",
+      "mobile ui",
+      "ios development"
+    ]
+  },
+
+  "Full Stack Development": {
+  "skills": [
+    "html",
+    "css",
+    "javascript",
+    "typescript",
+    "react",
+    "node.js",
+    "express",
+    "django",
+    "mongodb",
+    "mysql",
+    "postgresql",
+    "rest api",
+    "full stack",
+    "mern stack",
+    "mean stack",
+    "lamp stack",
+    "api integration",
+    "deployment",
+    "git",
+    "github"
+  ]
+},
+
+  "Cloud DevOps": {
+    "skills": [
+      "aws",
+      "azure",
+      "google cloud",
+      "docker",
+      "kubernetes",
+      "terraform",
+      "ansible",
+      "jenkins",
+      "github actions",
+      "ci/cd",
+      "linux",
+      "shell scripting",
+      "nginx",
+      "apache",
+      "cloudwatch",
+      "prometheus",
+      "grafana",
+      "infrastructure as code"
+    ]
+  },
+
+  "Cybersecurity": {
+    "skills": [
+      "network security",
+      "penetration testing",
+      "ethical hacking",
+      "cryptography",
+      "firewalls",
+      "wireshark",
+      "metasploit",
+      "burp suite",
+      "nmap",
+      "vulnerability assessment",
+      "siem",
+      "security auditing",
+      "owasp"
+    ]
+  },
+
+  "Core Software Engineering": {
+    "skills": [
+      "c",
+      "c++",
+      "java",
+      "python",
+      "c#",
+      "go",
+      "rust",
+      "git",
+      "github",
+      "data structures",
+      "algorithms",
+      "object oriented programming",
+      "oop",
+      "system design",
+      "operating systems",
+      "computer networks",
+      "database design",
+      "multithreading",
+      "design patterns",
+      "debugging",
+      "unit testing"
+    ]
+  },
+
+  "Databases": {
+    "skills": [
+      "mysql",
+      "postgresql",
+      "sqlite",
+      "oracle",
+      "sql server",
+      "mongodb",
+      "redis",
+      "cassandra",
+      "firebase",
+      "dynamodb",
+      "neo4j"
+    ]
+  },
+
+  "Big Data": {
+    "skills": [
+      "hadoop",
+      "spark",
+      "kafka",
+      "hive",
+      "pig",
+      "flink",
+      "airflow",
+      "beam",
+      "trino",
+      "presto"
+    ]
+  },
+
+  "Testing QA": {
+    "skills": [
+      "unit testing",
+      "integration testing",
+      "selenium",
+      "cypress",
+      "playwright",
+      "pytest",
+      "junit",
+      "testng",
+      "automation testing",
+      "manual testing"
+    ]
+  }
+}

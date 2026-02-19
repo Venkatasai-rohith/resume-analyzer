@@ -1,0 +1,23 @@
+# Python virtual environments
+venv/
+env/
+project1/
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Streamlit
+.streamlit/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Model/cache files
+*.pt
+*.bin
+*.model
