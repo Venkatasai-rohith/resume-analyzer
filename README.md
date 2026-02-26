@@ -78,7 +78,7 @@ python -m spacy download en_core_web_sm
 ```bash
 streamlit run App.py
 ```
-### 5. Open your rowser and go to:
+### 5. Open your browser and go to:
 http://localhost:8501
 
 
