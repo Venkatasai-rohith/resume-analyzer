@@ -1,7 +1,12 @@
 streamlit
 pdfplumber
-spacy
+streamlit==1.33.0
+spacy==3.7.2
+thinc==8.2.2
+blis==0.7.11
+numpy==1.26.4
+pandas
+en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl
 sentence-transformers
 transformers
 torch
-en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1.tar.gz
