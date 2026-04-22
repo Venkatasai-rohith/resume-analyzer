@@ -156,9 +156,6 @@ def extract_job_skills(text, matcher):
     return sorted(list(combined))
 
 
-
-
-
 # SIMILARITY
 
 
