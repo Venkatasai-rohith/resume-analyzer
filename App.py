@@ -5,8 +5,6 @@ os.environ["USE_TORCH"] = "1"
 import streamlit as st
 import pdfplumber
 import spacy
-import re
-import json
 from sentence_transformers import SentenceTransformer, util
 
 from analyzer_engine import (
@@ -24,9 +22,7 @@ from analyzer_engine import (
     compute_match_score
 )
 
-# ---------------------------------------------------------
 # PAGE CONFIGURATION & STYLING
-# ---------------------------------------------------------
 
 st.set_page_config(
     page_title="AI Resume Analyzer",
@@ -125,9 +121,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
-# ---------------------------------------------------------
 # RESOURCE CACHING & MODELS
-# ---------------------------------------------------------
 
 @st.cache_resource(show_spinner="Loading spaCy linguistic model...")
 def get_spacy_nlp():
@@ -153,9 +147,7 @@ def get_cached_matcher():
 universal_matcher = get_cached_matcher()
 
 
-# ---------------------------------------------------------
 # TEXT EXTRACTION HELPER
-# ---------------------------------------------------------
 
 def extract_pdf_text(file) -> str:
     """Extracts raw text from uploaded PDF file using pdfplumber."""
@@ -184,9 +176,7 @@ def compute_semantic_sim(text1: str, text2: str) -> float:
     return max(0.0, float(sim))
 
 
-# ---------------------------------------------------------
 # SAMPLE DATA PRESETS
-# ---------------------------------------------------------
 
 SAMPLE_AIML_RESUME = """P. Venkata Sai Rohith
 Email: rohith.ai@example.com | Phone: +1-555-019-2834 | linkedin.com/in/sai-rohith | github.com/rohith-ai
@@ -269,12 +259,9 @@ Requirements:
 """
 
 
-# ---------------------------------------------------------
 # SIDEBAR
-# ---------------------------------------------------------
 
 with st.sidebar:
-    st.image("https://img.icons8.com/fluency/96/artificial-intelligence.png", width=64)
     st.title("Settings & Controls")
     
     st.markdown("### Analysis Parameters")
@@ -326,9 +313,7 @@ with st.sidebar:
     st.caption("**100% Offline & Private**: Powered by local SpaCy NLP, universal skill taxonomy, and SentenceTransformer semantic embeddings.")
 
 
-# ---------------------------------------------------------
 # MAIN INTERFACE HEADER
-# ---------------------------------------------------------
 
 st.markdown("""
 <div style="text-align: center; margin-bottom: 2rem;">
@@ -342,9 +327,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
-# ---------------------------------------------------------
 # INPUT SECTION
-# ---------------------------------------------------------
 
 default_method = st.session_state.get("input_method", "Upload PDF Resume")
 input_method = st.radio(
@@ -390,9 +373,7 @@ with col_input_right:
 analyze_button = st.button("Analyze & Generate Intelligent Insights", type="primary", use_container_width=True)
 
 
-# ---------------------------------------------------------
 # ANALYSIS EXECUTION PIPELINE
-# ---------------------------------------------------------
 
 if analyze_button:
     if not resume_raw_text.strip():
@@ -489,9 +470,9 @@ if analyze_button:
             primary_domain=primary_domain
         )
 
-    # ---------------------------------------------------------
+
     # DASHBOARD TABS
-    # ---------------------------------------------------------
+
 
     st.markdown("<br>", unsafe_allow_html=True)
 
@@ -503,9 +484,9 @@ if analyze_button:
         "Parsed Data & Export"
     ])
 
-    # -----------------------------------------------------
+
     # TAB 1: MATCH OVERVIEW
-    # -----------------------------------------------------
+
     with tab1:
         st.markdown(f"### Target Role Alignment: **{primary_domain}**")
 
@@ -594,9 +575,9 @@ if analyze_button:
             st.write(f"- **Personal Projects Alignment**: `{int(proj_sim * 100)}%`")
             st.write(f"- **Detected Domain Fit**: `{primary_domain}`")
 
-    # -----------------------------------------------------
+
     # TAB 2: SKILL GAP & TRANSFERABILITY
-    # -----------------------------------------------------
+
     with tab2:
         st.markdown("### 3-Tier Technical Skill Analysis")
         st.caption("Unlike rigid keyword matchers, our engine identifies exact matches, semantic equivalents, and transferable frameworks.")
@@ -646,9 +627,9 @@ if analyze_button:
         else:
             st.success("Outstanding! You satisfy all extracted technical requirements for this position.")
 
-    # -----------------------------------------------------
+
     # TAB 3: ATS & CONTENT HEALTH AUDIT
-    # -----------------------------------------------------
+
     with tab3:
         st.markdown("### ATS Readiness & Content Strength Audit")
 
@@ -698,9 +679,9 @@ if analyze_button:
             else:
                 st.success("No common weak verbs detected in your resume!")
 
-    # -----------------------------------------------------
+
     # TAB 4: DYNAMIC ACTION PLAN & RECOMMENDATIONS
-    # -----------------------------------------------------
+
     with tab4:
         st.markdown("### Tailored Action Plan & Next Steps")
         st.caption("Context-aware recommendations dynamically formulated to close your exact skill gaps.")
@@ -770,9 +751,9 @@ if analyze_button:
                 </div>
                 """, unsafe_allow_html=True)
 
-    # -----------------------------------------------------
+
     # TAB 5: PARSED DATA & EXPORT
-    # -----------------------------------------------------
+
     with tab5:
         st.markdown("### Parsed Sections & Export Report")
 

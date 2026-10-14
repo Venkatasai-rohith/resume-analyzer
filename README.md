@@ -81,13 +81,13 @@ Navigate to: `http://localhost:8501`
 - **Document Parsing**: pdfplumber
 - **NLP & Linguistics**: spaCy (`en_core_web_sm`)
 - **Semantic Embeddings**: Sentence Transformers (`all-MiniLM-L6-v2`)
-- **Machine Learning / Vector Ops**: PyTorch, Scikit-learn, NumPy
+- **Machine Learning**: Scikit-learn, NumPy
 
 ---
 
 ## Author
 **P. Venkata Sai Rohith**  
-AIML Student & Software Engineer  
+AIML Student  
 GitHub: [Venkatasai-rohith](https://github.com/Venkatasai-rohith)
 
 ---
