@@ -85,6 +85,14 @@ Navigate to: `http://localhost:8501`
 
 ---
 
+##  Project Demo
+
+[![Watch the Project Demo](https://img.youtube.com/vi/ftIhgZaRMnU/0.jpg)](https://youtu.be/ftIhgZaRMnU)
+
+[ Watch the full demo on YouTube](https://youtu.be/ftIhgZaRMnU)
+
+---
+
 ## Author
 **P. Venkata Sai Rohith**  
 AIML Student  
